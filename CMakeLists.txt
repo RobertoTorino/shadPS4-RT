@@ -1113,6 +1113,7 @@ add_executable(shadps4
     src/sdl_window.h
     src/sdl_window.cpp
 )
+set_target_properties(shadps4 PROPERTIES OUTPUT_NAME "shadps4-cli")
 
 create_target_directory_groups(shadps4)
 

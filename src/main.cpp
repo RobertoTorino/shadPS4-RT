@@ -8,6 +8,7 @@
 #include <vector>
 #include <CLI/CLI.hpp>
 #include <SDL3/SDL_messagebox.h>
+#include "common/scm_rev.h"
 
 #include <core/emulator_state.h>
 #include "common/config.h"
@@ -52,6 +53,7 @@ int main(int argc, char* argv[]) {
     }
 
     CLI::App app{"shadPS4 Emulator CLI"};
+    app.set_version_flag("-v,--version", std::string(Common::g_version) + " (Rev: " + std::string(Common::g_scm_rev) + ")");
 
     // ---- CLI state ----
     std::optional<std::string> gamePath;

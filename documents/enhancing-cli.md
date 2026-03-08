@@ -57,11 +57,16 @@
 **Releases**            
 * CLI: `build\x64-Clang-Release\shadps4-cli.exe`
 
+**Keep in sync**                    
+* Sync the URLs from the .gitmodules: `git submodule sync --recursive`
+* Or force download if you encounter missing folders error(s): `git submodule update --init --recursive`             
+
 
 **Git commands**
 * see all remote branches: `git branch -r`
 * see local branches: `git branch`
 * show current branch you are working on: `git branch --show-current`
+* show remote url: `git remote -v`
 
 
 **Get the latest updates on top of your changes**               

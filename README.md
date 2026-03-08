@@ -5,7 +5,7 @@ SPDX-License-Identifier: GPL-2.0-or-later
 
 # Fork of shadPS4 CLI version
 
-# Building help
+# Building Help
 * Things that helped me fix some issues during building: [**Build Help**](./documents/building-help.md)
 * Enhancing the CLI: [**Enhancing The CLI**](./documents/enhancing-cli.md)
 

@@ -3,6 +3,14 @@ SPDX-FileCopyrightText: 2026 shadPS4 Emulator Project
 SPDX-License-Identifier: GPL-2.0-or-later
 -->
 
+# Fork of shadPS4 CLI version
+
+# Building help
+* Things that helped me fix some issues during building: [**Build Help**](./documents/building-help.md)
+* Enhancing the CLI: [**Enhancing The CLI**](./documents/enhancing-cli.md)
+
+---
+
 <h1 align="center">
   <br>
   <a href="https://shadps4.net/"><img src=".github/shadps4.png" width="220" alt=""></a>
@@ -64,20 +72,19 @@ This project began for fun. Given our limited free time, it may take some time b
 
 ## Docker
 
-For building shadPS4 in a containerized environment using Docker and VSCode, check the instructions here:  
-[**Docker Build Instructions**](https://github.com/shadps4-emu/shadPS4/blob/main/documents/building-docker.md)
+For building shadPS4 in a containerized environment using Docker and VSCode, check the instructions here: [**Docker Build Instructions**](./documents/building-docker.md)
 
 ## Windows
 
-Check the build instructions for [**Windows**](https://github.com/shadps4-emu/shadPS4/blob/main/documents/building-windows.md).
+Check the build instructions for [**Windows**](./documents/building-windows.md).
 
 ## Linux
 
-Check the build instructions for [**Linux**](https://github.com/shadps4-emu/shadPS4/blob/main/documents/building-linux.md).
+Check the build instructions for [**Linux**](./documents/building-linux.md).
 
 ## macOS
 
-Check the build instructions for [**macOS**](https://github.com/shadps4-emu/shadPS4/blob/main/documents/building-macos.md).
+Check the build instructions for [**macOS**](./documents/building-macos.md).
 
 > [!IMPORTANT]
 > macOS users need at least macOS 15.4 to run shadPS4. Due to GPU issues there are currently heavy bugs on Intel Macs.
@@ -91,6 +98,7 @@ To get the list of all available commands and also a more detailed description o
 
 Below is a list of commonly used command patterns:
 ```sh
+shadPS4 --version or -v # Shows current build number/version.
 shadPS4 CUSA00001 # Searches for a game folder called CUSA00001 in the list of game install folders, and boots it.
 shadPS4 --fullscreen true --config-clean CUSA00001    # the game argument is always the last one,
 shadPS4 -g CUSA00001 --fullscreen true --config-clean # ...unless manually specified otherwise.
